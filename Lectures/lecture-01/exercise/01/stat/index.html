@@ -3,17 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
+  <title>My Blog — Notes from the harness</title>
+  <meta name="description" content="A small static blog built from markdown notes — reflections and lessons on harness engineering for AI agents.">
+  <meta name="theme-color" content="#fbfbfd">
+  <meta property="og:title" content="My Blog">
+  <meta property="og:description" content="A small static blog built from markdown notes.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>My Blog</h1>
-    <p>A small static blog built from markdown notes.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="brand" href="#top">My&nbsp;Blog</a>
+      <a class="nav-link" href="#notes">Notes</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <p class="hero-eyebrow" data-reveal>Harness Engineering Journal</p>
+    <h1 class="hero-title" data-reveal>Notes from the harness.</h1>
+    <p class="hero-subtitle" data-reveal>
+      A small static blog built from markdown notes — reflections, experiments,
+      and lessons learned while engineering the systems that keep AI agents dependable.
+    </p>
   </header>
-  <main id="blog-list">
-    <p>Loading posts…</p>
+
+  <main id="main">
+    <section class="posts-section" id="notes" aria-labelledby="notes-heading">
+      <div class="posts-heading">
+        <h2 id="notes-heading" data-reveal>Latest notes</h2>
+        <p class="posts-heading-sub" data-reveal>Three posts, straight from the markdown.</p>
+      </div>
+
+      <div id="blog-list" class="blog-list">
+        <div class="skeleton" aria-hidden="true">
+          <div class="skeleton-card">
+            <div class="skeleton-line w-60"></div>
+            <div class="skeleton-line w-30"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line w-80"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-line w-50"></div>
+            <div class="skeleton-line w-35"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line w-75"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-line w-70"></div>
+            <div class="skeleton-line w-25"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line w-85"></div>
+          </div>
+        </div>
+        <p id="blog-empty" class="empty-state" hidden>No notes found.</p>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My Blog &middot; Built from markdown notes.</p>
+  </footer>
+
   <script src="index.js"></script>
 </body>
 </html>

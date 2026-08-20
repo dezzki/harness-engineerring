@@ -3,17 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
+  <meta name="description" content="Harness Notes — a personal notebook on harness engineering for AI coding agents.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <title>Harness Notes</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>My Blog</h1>
-    <p>A small static blog built from markdown notes.</p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="reading-bar" aria-hidden="true"></div>
+
+  <header class="site-nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#/" aria-label="Harness Notes — home">
+        <span class="brand-glyph" aria-hidden="true"></span>
+        <span class="brand-name">Harness Notes</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-menu" aria-label="Site">
+        <ul class="nav-links">
+          <li><a href="#/">Notes</a></li>
+          <li><a href="#top">Top</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main id="blog-list">
-    <p>Loading posts…</p>
+
+  <main id="main" tabindex="-1">
+    <div id="view" tabindex="-1"></div>
+    <noscript>
+      <section class="status">
+        <h2>JavaScript is off</h2>
+        <p>This site loads its notes in the browser. Please enable JavaScript to read the writing.</p>
+      </section>
+    </noscript>
   </main>
-  <script src="index.js"></script>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a class="brand" href="#/" aria-label="Harness Notes — home">
+          <span class="brand-glyph" aria-hidden="true"></span>
+          <span class="brand-name">Harness Notes</span>
+        </a>
+        <nav aria-label="Footer">
+          <ul class="footer-links">
+            <li><a href="#/">Notes</a></li>
+            <li><a href="#top">Back to top ↑</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-legal">
+        <p>© <span id="year">2026</span> Harness Notes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <p id="status" class="sr-only" aria-live="polite"></p>
 </body>
 </html>
