@@ -1,0 +1,1 @@
+Brief: what this is, how to run, how to test. Teaching point: docs are part of a codebase; the agent reads them to know how to run your program.
