@@ -1,1 +1,4 @@
 plan.json
+**/exercise.json
+__pycache__/
+*.pyc
