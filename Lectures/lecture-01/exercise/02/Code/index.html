@@ -31,9 +31,13 @@
       <p id="connect-warning" class="connect-warning" role="alert" hidden>
         Please enter a repository in owner/repo format first.
       </p>
+      <p id="connect-status" class="connect-status" role="status" aria-live="polite" hidden>
+        <span class="spinner" aria-hidden="true"></span>
+        <span id="connect-status-text"></span>
+      </p>
     </section>
 
-    <section class="card empty-state" aria-labelledby="empty-title">
+    <section id="empty-state" class="card empty-state" aria-labelledby="empty-title">
       <div class="empty-state-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
@@ -45,6 +49,31 @@
         Connect your first GitHub repository above and its study details
         will show up right here.
       </p>
+    </section>
+
+    <section id="repo-card" class="card repo-card" aria-labelledby="repo-name" hidden>
+      <div class="repo-card-header">
+        <h2 id="repo-name" class="repo-name">
+          <a id="repo-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+        </h2>
+        <span id="repo-language" class="language-badge" hidden></span>
+      </div>
+      <p id="repo-description" class="repo-description"></p>
+      <dl class="repo-stats">
+        <div class="stat">
+          <dt>Stars</dt>
+          <dd id="repo-stars"></dd>
+        </div>
+        <div class="stat">
+          <dt>Forks</dt>
+          <dd id="repo-forks"></dd>
+        </div>
+        <div class="stat">
+          <dt>Open issues</dt>
+          <dd id="repo-issues"></dd>
+        </div>
+      </dl>
+      <p class="repo-meta">Last commit: <strong id="repo-last-commit"></strong></p>
     </section>
   </main>
 

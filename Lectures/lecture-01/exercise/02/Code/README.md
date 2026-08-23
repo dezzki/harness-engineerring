@@ -2,17 +2,19 @@
 
 A study dashboard for tracking the GitHub repositories you learn from — all in one place.
 
-This is an early foundation build: plain HTML, CSS, and JavaScript only. No frameworks, no libraries, no build tools.
+Plain HTML, CSS, and JavaScript only. No frameworks, no libraries, no build tools.
 
 ## Current features
 
-- Header with the app name and tagline
-- Input to connect a GitHub repository (`owner/repo` format) with a Connect button
-- Inline warning when Connect is clicked with an empty input
+- Connect a GitHub repository (`owner/repo` format) via the public GitHub REST API
+- Repo card showing full name, description, stars, forks, open issues, main language,
+  and the last commit date as relative time (e.g. "2 days ago")
+- Loading spinner while fetching
+- Friendly error messages for unknown repos, API rate limits, timeouts, and network problems
+- Remembers the last connected repo in `localStorage` — it is restored after a page refresh
+- Inline warning when Connect is clicked with an empty or malformed input
 - Friendly empty state before any repo is connected
 - Responsive layout that works on phone-width screens
-
-Real GitHub connections come in a later step.
 
 ## How to run
 
@@ -27,13 +29,21 @@ Real GitHub connections come in a later step.
 
 Alternatively, you can simply open `index.html` directly in a browser.
 
+## Notes
+
+- The GitHub API is used without authentication, which allows about
+  60 requests per hour per IP address. Each connect uses 2 requests
+  (repo details + last commit). Test slowly.
+- To forget the saved repo, clear site data in your browser
+  (DevTools → Application → Local Storage → Clear).
+
 ## Project structure
 
 ```
 Code/
-├── index.html    # Page structure: header, connect section, empty state
-├── styles.css    # Design tokens (CSS variables) + layout
+├── index.html    # Page structure: header, connect section, empty state, repo card
+├── styles.css    # Design tokens (CSS variables) + layout + loading/error states
 ├── src/
-│   └── app.js    # Connect button behavior
+│   └── app.js    # Input validation, GitHub API fetch, rendering, persistence
 └── README.md
 ```
