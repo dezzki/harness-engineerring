@@ -14,7 +14,7 @@
   </header>
 
   <main class="container">
-    <section class="card connect-section" aria-labelledby="connect-title">
+    <section class="card narrow-card connect-section" aria-labelledby="connect-title">
       <h2 id="connect-title" class="section-title">Connect a repository</h2>
       <form id="connect-form" class="connect-form" novalidate>
         <label class="visually-hidden" for="repo-input">GitHub repository (owner/repo)</label>
@@ -37,7 +37,7 @@
       </p>
     </section>
 
-    <section id="empty-state" class="card empty-state" aria-labelledby="empty-title">
+    <section id="empty-state" class="card narrow-card empty-state" aria-labelledby="empty-title">
       <div class="empty-state-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
@@ -51,29 +51,70 @@
       </p>
     </section>
 
-    <section id="repo-card" class="card repo-card" aria-labelledby="repo-name" hidden>
-      <div class="repo-card-header">
-        <h2 id="repo-name" class="repo-name">
-          <a id="repo-link" href="#" target="_blank" rel="noopener noreferrer"></a>
-        </h2>
-        <span id="repo-language" class="language-badge" hidden></span>
+    <section id="dashboard" class="dashboard" aria-labelledby="dashboard-repo-name" hidden>
+      <header class="dashboard-header">
+        <div class="dashboard-title-block">
+          <h2 id="dashboard-repo-name" class="repo-name">
+            <a id="repo-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+          </h2>
+          <p id="repo-description" class="repo-description"></p>
+        </div>
+        <div class="dashboard-actions">
+          <span id="repo-language" class="language-badge" hidden></span>
+          <button type="button" id="refresh-btn" class="refresh-btn" disabled>Refresh</button>
+        </div>
+      </header>
+
+      <div class="dashboard-grid">
+        <article class="card panel" aria-labelledby="activity-heading">
+          <h3 id="activity-heading" class="panel-heading">Recent activity</h3>
+          <ul id="commits-list" class="panel-list commits-list"></ul>
+          <p id="commits-empty" class="panel-empty" hidden>No commits here yet.</p>
+        </article>
+
+        <article class="card panel" aria-labelledby="contributors-heading">
+          <h3 id="contributors-heading" class="panel-heading">Contributors</h3>
+          <ul id="contributors-list" class="panel-list contributors-list"></ul>
+          <p id="contributors-empty" class="panel-empty" hidden>No contributors here yet.</p>
+        </article>
+
+        <article class="card panel" aria-labelledby="overview-heading">
+          <h3 id="overview-heading" class="panel-heading">Overview</h3>
+          <dl class="overview-stats">
+            <div class="overview-row">
+              <dt>Created</dt>
+              <dd id="stat-created"></dd>
+            </div>
+            <div class="overview-row">
+              <dt>Default branch</dt>
+              <dd id="stat-branch"></dd>
+            </div>
+            <div class="overview-row">
+              <dt>Last commit</dt>
+              <dd id="stat-last-commit"></dd>
+            </div>
+            <div class="overview-row">
+              <dt>Stars</dt>
+              <dd id="stat-stars"></dd>
+            </div>
+            <div class="overview-row">
+              <dt>Forks</dt>
+              <dd id="stat-forks"></dd>
+            </div>
+          </dl>
+          <div class="ratio-block">
+            <p id="ratio-text" class="ratio-text">
+              <strong id="ratio-open"></strong> open ·
+              <strong id="ratio-closed"></strong> closed
+            </p>
+            <div id="ratio-bar" class="ratio-bar" role="img">
+              <div id="ratio-open-segment" class="ratio-segment-open"></div>
+              <div id="ratio-closed-segment" class="ratio-segment-closed"></div>
+            </div>
+            <p id="ratio-empty" class="panel-empty" hidden>No issues opened yet.</p>
+          </div>
+        </article>
       </div>
-      <p id="repo-description" class="repo-description"></p>
-      <dl class="repo-stats">
-        <div class="stat">
-          <dt>Stars</dt>
-          <dd id="repo-stars"></dd>
-        </div>
-        <div class="stat">
-          <dt>Forks</dt>
-          <dd id="repo-forks"></dd>
-        </div>
-        <div class="stat">
-          <dt>Open issues</dt>
-          <dd id="repo-issues"></dd>
-        </div>
-      </dl>
-      <p class="repo-meta">Last commit: <strong id="repo-last-commit"></strong></p>
     </section>
   </main>
 
