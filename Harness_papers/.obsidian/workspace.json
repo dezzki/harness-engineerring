@@ -1,56 +1,41 @@
 {
   "main": {
-    "id": "dc826f496162e0de",
+    "id": "1e5b6bc9cba4b73c",
     "type": "split",
     "children": [
       {
-        "id": "797119a671dea2ca",
+        "id": "6b859523258ed9ee",
         "type": "tabs",
         "children": [
           {
-            "id": "1a2c36f1d5687378",
+            "id": "fedf029d29cf47d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/lecture-01/exercise/02/Prompts.md",
+                "file": "inference.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prompts"
-            }
-          },
-          {
-            "id": "727c7de1ee01b222",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lectures/lecture-02/README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "title": "inference"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "2dfcd35e5e6797d9",
+    "id": "3046befd12a4ccbb",
     "type": "split",
     "children": [
       {
-        "id": "e40b4bf670c0addb",
+        "id": "61c7176bcab297c4",
         "type": "tabs",
         "children": [
           {
-            "id": "df799aa2c239faa7",
+            "id": "487f8340b4654828",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -65,7 +50,7 @@
             }
           },
           {
-            "id": "b569b1628abca417",
+            "id": "f3964f5265d80105",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -82,7 +67,7 @@
             }
           },
           {
-            "id": "2f64b6ff1e93fa84",
+            "id": "70bdcc9b99f1a20a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -101,20 +86,20 @@
     "width": 300
   },
   "right": {
-    "id": "553766e993d757af",
+    "id": "45a89f2151f2b32a",
     "type": "split",
     "children": [
       {
-        "id": "12a025cbe8ae1256",
+        "id": "037d061e456348fb",
         "type": "tabs",
         "children": [
           {
-            "id": "8177837148bc813e",
+            "id": "3c02e19a76dd5c28",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CHECKLIST.md",
+                "file": "inference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,12 +113,12 @@
             }
           },
           {
-            "id": "4b4e97d0107258b8",
+            "id": "9d447a4b7baaf074",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CHECKLIST.md",
+                "file": "inference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +127,7 @@
             }
           },
           {
-            "id": "1a2c417bfc8d1191",
+            "id": "3a7f73279b0a8641",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -157,7 +142,7 @@
             }
           },
           {
-            "id": "a956e9d77a38cf5c",
+            "id": "80551d113d02ebc4",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -171,12 +156,12 @@
             }
           },
           {
-            "id": "ab9cf6fdc60d7aef",
+            "id": "cbe4e15479ec3cce",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "CHECKLIST.md",
+                "file": "inference.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -203,25 +188,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "727c7de1ee01b222",
+  "active": "fedf029d29cf47d7",
   "lastOpenFiles": [
-    "Lectures/lecture-01/exercise/02/Prompts.md",
-    "Lectures/lecture-02/README.md",
-    "Lectures/lecture-01/exercise/02/README.md",
-    "Lectures/lecture-01/exercise/02/Code/README.md",
-    "Lectures/lecture-01/exercise/02/log.md",
-    "Lectures/lecture-01/exercise/02/Code/src/app.js",
-    "Lectures/lecture-01/exercise/02/Code/src",
-    "Lectures/lecture-01/exercise/02/Code/styles.css",
-    "Lectures/lecture-01/exercise/02/Code/index.html",
-    "Lectures/lecture-01/exercise/01/README.md",
-    "Lectures/lecture-01/exercise/02/Code/Verification.md",
-    "README.md",
-    "CHECKLIST.md",
-    "Lectures/lecture-01/Making models reliable with the use of Harness..md",
-    "ROADMAP.md",
-    "Lectures/lecture-01/\"It's not the Car, It's the Driver\".md",
-    "plan.json",
-    "Plan.md"
+    "harness-engineering-roadmap.md"
   ]
 }
