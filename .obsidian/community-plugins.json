@@ -1,4 +1,17 @@
 [
   "obsidian-languagetool-plugin",
-  "antidote-grammar-checker-integration"
+  "antidote-grammar-checker-integration",
+  "templater-obsidian",
+  "obsidian-excalidraw-plugin",
+  "dataview",
+  "obsidian-git",
+  "calendar",
+  "obsidian-kanban",
+  "obsidian-icon-folder",
+  "tasknotes",
+  "pdf-plus",
+  "paper_importer",
+  "colored-tags",
+  "surfing",
+  "obsidian-style-settings"
 ]

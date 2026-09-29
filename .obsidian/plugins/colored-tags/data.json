@@ -1,0 +1,29 @@
+{
+  "palette": {
+    "seed": 0,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
+  "knownTags": {
+    "0071e3": 1,
+    "1d1d1f": 2,
+    "6e6e73": 3,
+    "86868b": 4,
+    "blog-list": 6,
+    "f5f5f7": 7,
+    "fbfbfd": 8,
+    "harness-engineering": 9,
+    "main": 10,
+    "notes": 11,
+    "practical": 13,
+    "site": 14,
+    "view": 15
+  },
+  "tagColors": {},
+  "_version": 4
+}
